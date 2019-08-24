@@ -5,7 +5,7 @@
 
 
 
-![image](https://github.com/MzoneCL/OnlineRandomMusic/blob/master/images/servlet.png)
+![image](https://github.com/MzoneCL/OnlineRandomMusic/blob/master/images/demo.gif)
 
 
 
@@ -18,4 +18,3 @@ json 解析：Gson - https://github.com/google/gson
 图片加载：Glide - https://github.com/bumptech/glide
 
 背景虚化：Glide-transformations - https://github.com/wasabeef/glide-transformations
-
