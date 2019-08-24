@@ -11,7 +11,6 @@ import com.example.onlinerandommusic.listeners.OnNetworkMusicPreparedListener;
 import java.io.IOException;
 
 public class MusicPlayService extends Service {
-
     private static String TAG = "MusicPlayService";
 
     MediaPlayer mediaPlayer;
@@ -23,12 +22,10 @@ public class MusicPlayService extends Service {
     @Override
     public void onCreate() {
         super.onCreate();
-
         if (mediaPlayer == null){
             mediaPlayer = new MediaPlayer();
             firstTimePlay = true;
         }
-
     }
 
     @Override
@@ -45,7 +42,6 @@ public class MusicPlayService extends Service {
         public void playMusic(){
             if (!mediaPlayer.isPlaying())
                 mediaPlayer.start();
-
         }
 
         public void pauseMusic(){
@@ -81,10 +77,14 @@ public class MusicPlayService extends Service {
             return mediaPlayer.getDuration();
         }
 
+        // 获取当前播放进度
+        public int getCurPosition(){
+            return mediaPlayer.getCurrentPosition();
+        }
+
         public boolean isFirstTimePlay(){
             return firstTimePlay;
         }
-
     }
 
     @Override
